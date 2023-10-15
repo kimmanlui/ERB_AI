@@ -1,0 +1,114 @@
+---
+title: "人工智能知識及應用證書（兼讀制）: R 和 Monta Carlo "
+output:
+  html_notebook: default
+--- 
+
+### Learning Objective
+- Get familar with R 
+- Understand a simple Monta Carlo algorithm to find Pi 
+
+
+```{r}
+a = 1
+b = 2
+print( (a+b)/2) 
+```
+
+```{r}
+a = 1
+b = 2
+c = (1+2) / 2
+print(c)
+```
+
+```{r}
+a = c(1, 2, 3, 4, 5)
+print( sum(a))
+print( length(a))
+print( sum(a) / length(a))
+print(mean(a))
+```
+
+```{r}
+rawdata = "
+ age , smoking, cancer
+ 35  ,  0 , 0
+ 40  ,  1 , 0
+ 45  ,  0 , 1
+ 55  ,  1 , 1"
+
+trainData = read.csv(text=rawdata , header=TRUE)
+
+print(trainData)
+print(trainData[1,2])
+```
+```{r}
+print(trainData[ ,c(1,2)])
+```
+```{r}
+print(mean(trainData[ ,c(1)]))
+```
+
+
+```{r}
+runif( 3 , min=-0.5 , max=0.5)
+runif( 6 , min=-0.5 , max=0.5)
+```
+
+```{r}
+a=c(1,2,3,4)
+b=c(1,0,3,0)
+a>b
+c <- a > b
+print(c)
+print(c*1)
+print(c+3)
+print(mean(c))
+print(sum(c))
+```
+
+```{r}
+plot( x =c(1,2), y=c(3,4), main="abc", pch='.')
+#plot( x =c(1,2), y=c(3,4), main="abc", pch='.', ylab='y', xlab='x')
+```
+
+```{r}
+condV=c(TRUE,FALSE)
+plot( x =c(1,2), y=c(3,4), main="abc", col=ifelse(condV,"red","blue"))
+#plot( x =c(1,2), y=c(3,4), main="abc", pch='.', ylab='y', xlab='x')
+```
+
+
+
+
+
+```{r}
+runs = 100000
+#runif samples from a uniform distribution
+xs = runif( runs , min=-0.5 , max=0.5)
+ys = runif( runs , min=-0.5 , max=0.5)
+```
+
+how many points are in the circle
+```{r}
+in.circle = xs^2 + ys^2 <= 0.5^2
+```
+
+The area of circle is pi*r*r  (r*r = r^2) 
+The area of square is 4*r*r
+
+Number of points inside circle = in.circle
+Number of points inside square = 100000
+
+
+Number of points inside circle / Number of points inside square = The area of circle / The area of square 
+```{r}
+mc.pi <- (sum(in.circle)/runs)*4
+```
+
+```{r}
+plot(x=xs,y=ys,pch='.',col=ifelse(in.circle,"blue","grey")
+     ,xlab='',ylab='',asp=1,
+     main=paste("MC Approximation of Pi =",mc.pi))
+```
