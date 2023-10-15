@@ -1,5 +1,6 @@
 source("https://raw.githubusercontent.com/NicoleRadziwill/R-Functions/master/qlearn.R")
 
+
 R <- matrix(c(-1,  -1, -1, -1,   0,   1,
               -1,  -1, -1,  0,  -1,   0,
               -1,  -1, -1,  0,  -1,  -1, 
