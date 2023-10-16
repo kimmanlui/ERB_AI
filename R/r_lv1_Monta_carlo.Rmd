@@ -37,6 +37,13 @@ print( sum(a) / length(a))
 print(mean(a))
 ```
 
+首先，代码定义了一个名为"rawdata"的字符串变量，其中包含了一组数据。
+这组数据的每一行代表一个个体的信息，包括年龄、吸烟情况和癌症情况。
+每行的数据用逗号分隔，第一行是数据的标题，后面的行是具体的数据。
+接下来，代码使用read.csv函数将字符串数据解析为一个数据框，并将其赋值给名为"trainData"的变量。
+函数的参数text=rawdata表示数据来自于"rawdata"变量，header=TRUE表示数据包含标题行。
+然后，代码使用print函数分别打印出整个数据框trainData和trainData中第一行第二列的数据。
+最终的输出结果将显示整个数据框trainData的内容，以及trainData中第一行第二列的特定数据。
 ```{r}
 rawdata = "
  age , smoking, cancer
@@ -50,9 +57,16 @@ trainData = read.csv(text=rawdata , header=TRUE)
 print(trainData)
 print(trainData[1,2])
 ```
+
+代码使用print函数打印出trainData数据框中的特定列。
+trainData[ ,c(1,2)]表示选择trainData数据框的所有行（空白表示选择所有行），以及列索引为1和2的列。
+因此，代码的输出将显示trainData数据框中的第一列和第二列的数据。
+简而言之，这段代码将打印出trainData数据框中特定列的数据。
 ```{r}
 print(trainData[ ,c(1,2)])
 ```
+
+
 ```{r}
 print(mean(trainData[ ,c(1)]))
 ```
