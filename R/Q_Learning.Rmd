@@ -11,10 +11,13 @@ Date : 01-Oct-2023
 
 ![](Room.png) 
 
-
 ```{r}
-source("https://raw.githubusercontent.com/NicoleRadziwill/R-Functions/master/qlearn.R")
+
+
+
 ```
+
+
 
 
 
@@ -97,4 +100,5 @@ round(results)
 ```
 
 ### Reference
-https://www.r-bloggers.com/2017/12/a-simple-intro-to-q-learning-in-r-floor-plan-navigation/
+* https://www.r-bloggers.com/2017/12/a-simple-intro-to-q-learning-in-r-floor-plan-navigation/
+* https://raw.githubusercontent.com/NicoleRadziwill/R-Functions/master/qlearn.R
