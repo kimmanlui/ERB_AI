@@ -53,6 +53,11 @@ q.learn <- function(R, N, alpha, gamma, tgt.state) {
       else
         ns <- sample(next.states,1)
       ## this is the update
+      # Bellman's equation ::
+      # Q[cs,ns] expected reward from cs to ns
+      # Actual reward received for the current action 
+      # R[cs,ns] is for the immediate reward received 
+      # max(Q[ns, which(R[ns,] > -1)]) is the best Q Value from state 'cs'.  
       Q[cs,ns] <- Q[cs,ns] + alpha*(R[cs,ns] + gamma*max(Q[ns, which(R[ns,] > -1)]) - Q[cs,ns])
       ## break out of while loop if target state is reached
       ## otherwise, set next.state as current.state and repeat      
