@@ -13,3 +13,5 @@ install.packages('dplyr')<br>
 install.packages("remotes")<br>
 options(timeout=400)<br>
 remotes::install_github('stillmatic/MNIST')<br>
+Rattle<br>
+install.packages("rattle") <br>
