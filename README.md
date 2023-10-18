@@ -21,3 +21,6 @@ install.packages("rattle") <br>
 Required Packages for Notebook<br>
 !pip install gpt4all or conda install -c anaconda gpt4all <br>
 !pip install transformers or conda install -c conda-forge transformers<br>
+
+Orange Data Mining Online Manual<br>
+https://orangedatamining.com/widget-catalog/model/constant/ 
