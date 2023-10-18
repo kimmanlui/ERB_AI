@@ -67,11 +67,16 @@ print(trainData[ ,c(1,2)])
 ```
 
 
+trainData[,c(1)] 选择 trainData 数据集的第一列。
+mean() 计算所选列的平均值。
+print() 在控制台上显示结果。
+因此，命令 print(mean(trainData[,c(1)])) 将打印 trainData 数据集的第一列的平均值。
 ```{r}
 print(mean(trainData[ ,c(1)]))
 ```
 
-
+runif(3, min=-0.5, max=0.5) 生成 3 个介于 -0.5 和 0.5 之间的均匀分布的随机数。
+runif(6, min=-0.5, max=0.5) 生成 6 个介于 -0.5 和 0.5 之间的均匀分布的随机数。
 ```{r}
 runif( 3 , min=-0.5 , max=0.5)
 runif( 6 , min=-0.5 , max=0.5)
