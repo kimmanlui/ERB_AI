@@ -94,6 +94,7 @@ print(mean(c))
 print(sum(c))
 ```
 
+plot( x =c(1,2), y=c(3,4), main="abc", pch='.') 是 R 語言中的一個函數，用於繪製散點圖。其中 x 和 y 分別是散點圖的 x 軸和 y 軸的數據，main 是圖的標題，pch 是散點圖的符號。在這個例子中，x 和 y 分別是 (1,3) 和 (2,4)，所以這個散點圖有兩個點，一個在 (1,3) 位置，另一個在 (2,4) 位置。符號是點，標題是 "abc"。
 ```{r}
 plot( x =c(1,2), y=c(3,4), main="abc", pch='.')
 #plot( x =c(1,2), y=c(3,4), main="abc", pch='.', ylab='y', xlab='x')
