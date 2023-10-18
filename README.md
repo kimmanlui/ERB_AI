@@ -15,3 +15,8 @@ options(timeout=400)<br>
 remotes::install_github('stillmatic/MNIST')<br>
 Rattle<br>
 install.packages("rattle") <br>
+
+
+Required Packages for Notebook<br>
+!pip install gpt4all or conda install -c anaconda gpt4all <br>
+!pip install transformer
