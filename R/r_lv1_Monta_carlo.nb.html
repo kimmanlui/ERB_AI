@@ -1775,12 +1775,22 @@ Monta Carlo</h1>
 <li>Get familar with R</li>
 <li>Understand a simple Monta Carlo algorithm to find Pi</li>
 </ul>
+<div id="r" class="section level4">
+<h4>R</h4>
+<p>在这个例子中，a的值为1，b的值为2，a加b等于3。</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYSA9IDFcbmIgPSAyXG5wcmludCggKGErYikvMikgXG5gYGAifQ== -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYSA9IDFcbmIgPSAyXG5hK2JcbmBgYCJ9 -->
 <pre class="r"><code>a = 1
 b = 2
-print( (a+b)/2) </code></pre>
+a+b</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucHJpbnQoIChhK2IpLzIpIFxuYGBgIn0= -->
+<pre class="r"><code>print( (a+b)/2) </code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
@@ -1794,6 +1804,12 @@ print(c)</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
+<p>a是一個包含1, 2, 3, 4,
+5的向量。程式碼中的四個print語句分別執行以下操作：
+計算a中所有元素的總和，並將其打印出來。
+計算a中元素的數量，並將其打印出來。
+計算a中所有元素的平均值，並將其打印出來。
+計算a中所有元素的平均值，並將其打印出來。</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYSA9IGMoMSwgMiwgMywgNCwgNSlcbnByaW50KCBzdW0oYSkpXG5wcmludCggbGVuZ3RoKGEpKVxucHJpbnQoIHN1bShhKSAvIGxlbmd0aChhKSlcbnByaW50KG1lYW4oYSkpXG5gYGAifQ== -->
@@ -1805,6 +1821,13 @@ print(mean(a))</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
+<p>首先，代码定义了一个名为”rawdata”的字符串变量，其中包含了一组数据。
+这组数据的每一行代表一个个体的信息，包括年龄、吸烟情况和癌症情况。
+每行的数据用逗号分隔，第一行是数据的标题，后面的行是具体的数据。
+接下来，代码使用read.csv函数将字符串数据解析为一个数据框，并将其赋值给名为”trainData”的变量。
+函数的参数text=rawdata表示数据来自于”rawdata”变量，header=TRUE表示数据包含标题行。
+然后，代码使用print函数分别打印出整个数据框trainData和trainData中第一行第二列的数据。
+最终的输出结果将显示整个数据框trainData的内容，以及trainData中第一行第二列的特定数据。</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucmF3ZGF0YSA9IFwiXG4gYWdlICwgc21va2luZywgY2FuY2VyXG4gMzUgICwgIDAgLCAwXG4gNDAgICwgIDEgLCAwXG4gNDUgICwgIDAgLCAxXG4gNTUgICwgIDEgLCAxXCJcblxudHJhaW5EYXRhID0gcmVhZC5jc3YodGV4dD1yYXdkYXRhICwgaGVhZGVyPVRSVUUpXG5cbnByaW50KHRyYWluRGF0YSlcbnByaW50KHRyYWluRGF0YVsxLDJdKVxuYGBgIn0= -->
@@ -1821,17 +1844,52 @@ print(trainData)
 print(trainData[1,2])</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>代码使用print函数打印出trainData数据框中的特定列。 trainData[
+,c(1,2)]表示选择trainData数据框的所有行（空白表示选择所有行），以及列索引为1和2的列。
+因此，代码的输出将显示trainData数据框中的第一列和第二列的数据。
+简而言之，这段代码将打印出trainData数据框中特定列的数据。</p>
+<!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucHJpbnQodHJhaW5EYXRhWyAsYygxLDIpXSlcbmBgYCJ9 -->
 <pre class="r"><code>print(trainData[ ,c(1,2)])</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGYgPC0gcmVhZC5jc3YoJ2h0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9vd2lkL2NvdmlkLTE5LWRhdGEvbWFzdGVyL3B1YmxpYy9kYXRhL2hvc3BpdGFsaXphdGlvbnMvbG9jYXRpb25zLmNzdicpXG5wcmludChkZilcbmBgYCJ9 -->
+<pre class="r"><code>df &lt;- read.csv(&#39;https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/hospitalizations/locations.csv&#39;)
+print(df)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucHJpbnQobnJvdyhkZikpXG5wcmludChuY29sKGRmKSlcbnByaW50KG5hbWVzKGRmKSlcbmBgYCJ9 -->
+<pre class="r"><code>print(nrow(df))
+print(ncol(df))
+print(names(df))</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>trainData[,c(1)] 选择 trainData 数据集的第一列。 mean()
+计算所选列的平均值。 print() 在控制台上显示结果。 因此，命令
+print(mean(trainData[,c(1)])) 将打印 trainData
+数据集的第一列的平均值。</p>
+<!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucHJpbnQobWVhbih0cmFpbkRhdGFbICxjKDEpXSkpXG5gYGAifQ== -->
 <pre class="r"><code>print(mean(trainData[ ,c(1)]))</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
+</div>
+<div id="monta-carlo-algorithm-to-find-pi" class="section level4">
+<h4>Monta Carlo algorithm to find Pi</h4>
+<p>runif(3, min=-0.5, max=0.5) 生成 3 个介于 -0.5 和 0.5
+之间的均匀分布的随机数。 runif(6, min=-0.5, max=0.5) 生成 6 个介于 -0.5
+和 0.5 之间的均匀分布的随机数。</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucnVuaWYoIDMgLCBtaW49LTAuNSAsIG1heD0wLjUpXG5ydW5pZiggNiAsIG1pbj0tMC41ICwgbWF4PTAuNSlcbmBgYCJ9 -->
@@ -1855,6 +1913,11 @@ print(sum(c))</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
+<p>plot( x =c(1,2), y=c(3,4), main=“abc”, pch=‘.’) 是 R
+語言中的一個函數，用於繪製散點圖。其中 x 和 y 分別是散點圖的 x 軸和 y
+軸的數據，main 是圖的標題，pch 是散點圖的符號。在這個例子中，x 和 y
+分別是 (1,3) 和 (2,4)，所以這個散點圖有兩個點，一個在 (1,3)
+位置，另一個在 (2,4) 位置。符號是點，標題是 “abc”。</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucGxvdCggeCA9YygxLDIpLCB5PWMoMyw0KSwgbWFpbj1cImFiY1wiLCBwY2g9Jy4nKVxuI3Bsb3QoIHggPWMoMSwyKSwgeT1jKDMsNCksIG1haW49XCJhYmNcIiwgcGNoPScuJywgeWxhYj0neScsIHhsYWI9J3gnKVxuYGBgIn0= -->
@@ -1912,8 +1975,9 @@ area of circle / The area of square</p>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 </div>
+</div>
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAi5Lq65bel5pm66IO955+l6K2Y5Y+K5oeJ55So6K2J5pu477yI5YW86K6A5Yi277yJOiBSIOWSjCBNb250YSBDYXJsbyAiCm91dHB1dDoKICBodG1sX25vdGVib29rOiBkZWZhdWx0Ci0tLSAKCiMjIyBMZWFybmluZyBPYmplY3RpdmUKLSBHZXQgZmFtaWxhciB3aXRoIFIgCi0gVW5kZXJzdGFuZCBhIHNpbXBsZSBNb250YSBDYXJsbyBhbGdvcml0aG0gdG8gZmluZCBQaSAKCgpgYGB7cn0KYSA9IDEKYiA9IDIKcHJpbnQoIChhK2IpLzIpIApgYGAKCmBgYHtyfQphID0gMQpiID0gMgpjID0gKDErMikgLyAyCnByaW50KGMpCmBgYAoKYGBge3J9CmEgPSBjKDEsIDIsIDMsIDQsIDUpCnByaW50KCBzdW0oYSkpCnByaW50KCBsZW5ndGgoYSkpCnByaW50KCBzdW0oYSkgLyBsZW5ndGgoYSkpCnByaW50KG1lYW4oYSkpCmBgYAoKYGBge3J9CnJhd2RhdGEgPSAiCiBhZ2UgLCBzbW9raW5nLCBjYW5jZXIKIDM1ICAsICAwICwgMAogNDAgICwgIDEgLCAwCiA0NSAgLCAgMCAsIDEKIDU1ICAsICAxICwgMSIKCnRyYWluRGF0YSA9IHJlYWQuY3N2KHRleHQ9cmF3ZGF0YSAsIGhlYWRlcj1UUlVFKQoKcHJpbnQodHJhaW5EYXRhKQpwcmludCh0cmFpbkRhdGFbMSwyXSkKYGBgCmBgYHtyfQpwcmludCh0cmFpbkRhdGFbICxjKDEsMildKQpgYGAKYGBge3J9CnByaW50KG1lYW4odHJhaW5EYXRhWyAsYygxKV0pKQpgYGAKCgpgYGB7cn0KcnVuaWYoIDMgLCBtaW49LTAuNSAsIG1heD0wLjUpCnJ1bmlmKCA2ICwgbWluPS0wLjUgLCBtYXg9MC41KQpgYGAKCmBgYHtyfQphPWMoMSwyLDMsNCkKYj1jKDEsMCwzLDApCmE+YgpjIDwtIGEgPiBiCnByaW50KGMpCnByaW50KGMqMSkKcHJpbnQoYyszKQpwcmludChtZWFuKGMpKQpwcmludChzdW0oYykpCmBgYAoKYGBge3J9CnBsb3QoIHggPWMoMSwyKSwgeT1jKDMsNCksIG1haW49ImFiYyIsIHBjaD0nLicpCiNwbG90KCB4ID1jKDEsMiksIHk9YygzLDQpLCBtYWluPSJhYmMiLCBwY2g9Jy4nLCB5bGFiPSd5JywgeGxhYj0neCcpCmBgYAoKYGBge3J9CmNvbmRWPWMoVFJVRSxGQUxTRSkKcGxvdCggeCA9YygxLDIpLCB5PWMoMyw0KSwgbWFpbj0iYWJjIiwgY29sPWlmZWxzZShjb25kViwicmVkIiwiYmx1ZSIpKQojcGxvdCggeCA9YygxLDIpLCB5PWMoMyw0KSwgbWFpbj0iYWJjIiwgcGNoPScuJywgeWxhYj0neScsIHhsYWI9J3gnKQpgYGAKCgoKCgpgYGB7cn0KcnVucyA9IDEwMDAwMAojcnVuaWYgc2FtcGxlcyBmcm9tIGEgdW5pZm9ybSBkaXN0cmlidXRpb24KeHMgPSBydW5pZiggcnVucyAsIG1pbj0tMC41ICwgbWF4PTAuNSkKeXMgPSBydW5pZiggcnVucyAsIG1pbj0tMC41ICwgbWF4PTAuNSkKYGBgCgpob3cgbWFueSBwb2ludHMgYXJlIGluIHRoZSBjaXJjbGUKYGBge3J9CmluLmNpcmNsZSA9IHhzXjIgKyB5c14yIDw9IDAuNV4yCmBgYAoKVGhlIGFyZWEgb2YgY2lyY2xlIGlzIHBpKnIqciAgKHIqciA9IHJeMikgClRoZSBhcmVhIG9mIHNxdWFyZSBpcyA0KnIqcgoKTnVtYmVyIG9mIHBvaW50cyBpbnNpZGUgY2lyY2xlID0gaW4uY2lyY2xlCk51bWJlciBvZiBwb2ludHMgaW5zaWRlIHNxdWFyZSA9IDEwMDAwMAoKCk51bWJlciBvZiBwb2ludHMgaW5zaWRlIGNpcmNsZSAvIE51bWJlciBvZiBwb2ludHMgaW5zaWRlIHNxdWFyZSA9IFRoZSBhcmVhIG9mIGNpcmNsZSAvIFRoZSBhcmVhIG9mIHNxdWFyZSAKYGBge3J9Cm1jLnBpIDwtIChzdW0oaW4uY2lyY2xlKS9ydW5zKSo0CmBgYAoKYGBge3J9CnBsb3QoeD14cyx5PXlzLHBjaD0nLicsY29sPWlmZWxzZShpbi5jaXJjbGUsImJsdWUiLCJncmV5IikKICAgICAseGxhYj0nJyx5bGFiPScnLGFzcD0xLAogICAgIG1haW49cGFzdGUoIk1DIEFwcHJveGltYXRpb24gb2YgUGkgPSIsbWMucGkpKQpgYGAK</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAi5Lq65bel5pm66IO955+l6K2Y5Y+K5oeJ55So6K2J5pu477yI5YW86K6A5Yi277yJOiBSIOWSjCBNb250YSBDYXJsbyAiCm91dHB1dDoKICBodG1sX25vdGVib29rOiBkZWZhdWx0Ci0tLSAKCiMjIyBMZWFybmluZyBPYmplY3RpdmUKLSBHZXQgZmFtaWxhciB3aXRoIFIgCi0gVW5kZXJzdGFuZCBhIHNpbXBsZSBNb250YSBDYXJsbyBhbGdvcml0aG0gdG8gZmluZCBQaSAKCiMjIyMgUgoK5Zyo6L+Z5Liq5L6L5a2Q5Lit77yMYeeahOWAvOS4ujHvvIxi55qE5YC85Li6Mu+8jGHliqBi562J5LqOM+OAggoKCmBgYHtyfQphID0gMQpiID0gMgphK2IKYGBgCgoKYGBge3J9CnByaW50KCAoYStiKS8yKSAKYGBgCgoKYGBge3J9CmEgPSAxCmIgPSAyCmMgPSAoMSsyKSAvIDIKcHJpbnQoYykKYGBgCgph5piv5LiA5YCL5YyF5ZCrMSwgMiwgMywgNCwgNeeahOWQkemHj+OAgueoi+W8j+eivOS4reeahOWbm+WAi3ByaW506Kqe5Y+l5YiG5Yil5Z+36KGM5Lul5LiL5pON5L2c77yaCuioiOeul2HkuK3miYDmnInlhYPntKDnmoTnuL3lkozvvIzkuKblsIflhbbmiZPljbDlh7rkvobjgIIK6KiI566XYeS4reWFg+e0oOeahOaVuOmHj++8jOS4puWwh+WFtuaJk+WNsOWHuuS+huOAggroqIjnrpdh5Lit5omA5pyJ5YWD57Sg55qE5bmz5Z2H5YC877yM5Lim5bCH5YW25omT5Y2w5Ye65L6G44CCCuioiOeul2HkuK3miYDmnInlhYPntKDnmoTlubPlnYflgLzvvIzkuKblsIflhbbmiZPljbDlh7rkvobjgIIKCmBgYHtyfQphID0gYygxLCAyLCAzLCA0LCA1KQpwcmludCggc3VtKGEpKQpwcmludCggbGVuZ3RoKGEpKQpwcmludCggc3VtKGEpIC8gbGVuZ3RoKGEpKQpwcmludChtZWFuKGEpKQpgYGAKCummluWFiO+8jOS7o+eggeWumuS5ieS6huS4gOS4quWQjeS4uiJyYXdkYXRhIueahOWtl+espuS4suWPmOmHj++8jOWFtuS4reWMheWQq+S6huS4gOe7hOaVsOaNruOAggrov5nnu4TmlbDmja7nmoTmr4/kuIDooYzku6PooajkuIDkuKrkuKrkvZPnmoTkv6Hmga/vvIzljIXmi6zlubTpvoTjgIHlkLjng5/mg4XlhrXlkoznmYznl4fmg4XlhrXjgIIK5q+P6KGM55qE5pWw5o2u55So6YCX5Y+35YiG6ZqU77yM56ys5LiA6KGM5piv5pWw5o2u55qE5qCH6aKY77yM5ZCO6Z2i55qE6KGM5piv5YW35L2T55qE5pWw5o2u44CCCuaOpeS4i+adpe+8jOS7o+eggeS9v+eUqHJlYWQuY3N25Ye95pWw5bCG5a2X56ym5Liy5pWw5o2u6Kej5p6Q5Li65LiA5Liq5pWw5o2u5qGG77yM5bm25bCG5YW26LWL5YC857uZ5ZCN5Li6InRyYWluRGF0YSLnmoTlj5jph4/jgIIK5Ye95pWw55qE5Y+C5pWwdGV4dD1yYXdkYXRh6KGo56S65pWw5o2u5p2l6Ieq5LqOInJhd2RhdGEi5Y+Y6YeP77yMaGVhZGVyPVRSVUXooajnpLrmlbDmja7ljIXlkKvmoIfpopjooYzjgIIK54S25ZCO77yM5Luj56CB5L2/55SocHJpbnTlh73mlbDliIbliKvmiZPljbDlh7rmlbTkuKrmlbDmja7moYZ0cmFpbkRhdGHlkox0cmFpbkRhdGHkuK3nrKzkuIDooYznrKzkuozliJfnmoTmlbDmja7jgIIK5pyA57uI55qE6L6T5Ye657uT5p6c5bCG5pi+56S65pW05Liq5pWw5o2u5qGGdHJhaW5EYXRh55qE5YaF5a6577yM5Lul5Y+KdHJhaW5EYXRh5Lit56ys5LiA6KGM56ys5LqM5YiX55qE54m55a6a5pWw5o2u44CCCmBgYHtyfQpyYXdkYXRhID0gIgogYWdlICwgc21va2luZywgY2FuY2VyCiAzNSAgLCAgMCAsIDAKIDQwICAsICAxICwgMAogNDUgICwgIDAgLCAxCiA1NSAgLCAgMSAsIDEiCgp0cmFpbkRhdGEgPSByZWFkLmNzdih0ZXh0PXJhd2RhdGEgLCBoZWFkZXI9VFJVRSkKCnByaW50KHRyYWluRGF0YSkKcHJpbnQodHJhaW5EYXRhWzEsMl0pCmBgYAoK5Luj56CB5L2/55SocHJpbnTlh73mlbDmiZPljbDlh7p0cmFpbkRhdGHmlbDmja7moYbkuK3nmoTnibnlrprliJfjgIIKdHJhaW5EYXRhWyAsYygxLDIpXeihqOekuumAieaLqXRyYWluRGF0YeaVsOaNruahhueahOaJgOacieihjO+8iOepuueZveihqOekuumAieaLqeaJgOacieihjO+8ie+8jOS7peWPiuWIl+e0ouW8leS4ujHlkowy55qE5YiX44CCCuWboOatpO+8jOS7o+eggeeahOi+k+WHuuWwhuaYvuekunRyYWluRGF0YeaVsOaNruahhuS4reeahOesrOS4gOWIl+WSjOesrOS6jOWIl+eahOaVsOaNruOAggrnroDogIzoqIDkuYvvvIzov5nmrrXku6PnoIHlsIbmiZPljbDlh7p0cmFpbkRhdGHmlbDmja7moYbkuK3nibnlrprliJfnmoTmlbDmja7jgIIKYGBge3J9CnByaW50KHRyYWluRGF0YVsgLGMoMSwyKV0pCmBgYAoKCmBgYHtyfQpkZiA8LSByZWFkLmNzdignaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL293aWQvY292aWQtMTktZGF0YS9tYXN0ZXIvcHVibGljL2RhdGEvaG9zcGl0YWxpemF0aW9ucy9sb2NhdGlvbnMuY3N2JykKcHJpbnQoZGYpCmBgYAoKYGBge3J9CnByaW50KG5yb3coZGYpKQpwcmludChuY29sKGRmKSkKcHJpbnQobmFtZXMoZGYpKQpgYGAKCnRyYWluRGF0YVssYygxKV0g6YCJ5oupIHRyYWluRGF0YSDmlbDmja7pm4bnmoTnrKzkuIDliJfjgIIKbWVhbigpIOiuoeeul+aJgOmAieWIl+eahOW5s+Wdh+WAvOOAggpwcmludCgpIOWcqOaOp+WItuWPsOS4iuaYvuekuue7k+aenOOAggrlm6DmraTvvIzlkb3ku6QgcHJpbnQobWVhbih0cmFpbkRhdGFbLGMoMSldKSkg5bCG5omT5Y2wIHRyYWluRGF0YSDmlbDmja7pm4bnmoTnrKzkuIDliJfnmoTlubPlnYflgLzjgIIKYGBge3J9CnByaW50KG1lYW4odHJhaW5EYXRhWyAsYygxKV0pKQpgYGAKCiMjIyMgTW9udGEgQ2FybG8gYWxnb3JpdGhtIHRvIGZpbmQgUGkKCgpydW5pZigzLCBtaW49LTAuNSwgbWF4PTAuNSkg55Sf5oiQIDMg5Liq5LuL5LqOIC0wLjUg5ZKMIDAuNSDkuYvpl7TnmoTlnYfljIDliIbluIPnmoTpmo/mnLrmlbDjgIIKcnVuaWYoNiwgbWluPS0wLjUsIG1heD0wLjUpIOeUn+aIkCA2IOS4quS7i+S6jiAtMC41IOWSjCAwLjUg5LmL6Ze055qE5Z2H5YyA5YiG5biD55qE6ZqP5py65pWw44CCCmBgYHtyfQpydW5pZiggMyAsIG1pbj0tMC41ICwgbWF4PTAuNSkKcnVuaWYoIDYgLCBtaW49LTAuNSAsIG1heD0wLjUpCmBgYAoKYGBge3J9CmE9YygxLDIsMyw0KQpiPWMoMSwwLDMsMCkKYT5iCmMgPC0gYSA+IGIKcHJpbnQoYykKcHJpbnQoYyoxKQpwcmludChjKzMpCnByaW50KG1lYW4oYykpCnByaW50KHN1bShjKSkKYGBgCgpwbG90KCB4ID1jKDEsMiksIHk9YygzLDQpLCBtYWluPSJhYmMiLCBwY2g9Jy4nKSDmmK8gUiDoqp7oqIDkuK3nmoTkuIDlgIvlh73mlbjvvIznlKjmlrznuaroo73mlaPpu57lnJbjgILlhbbkuK0geCDlkowgeSDliIbliKXmmK/mlaPpu57lnJbnmoQgeCDou7jlkowgeSDou7jnmoTmlbjmk5rvvIxtYWluIOaYr+WclueahOaomemhjO+8jHBjaCDmmK/mlaPpu57lnJbnmoTnrKbomZ/jgILlnKjpgJnlgIvkvovlrZDkuK3vvIx4IOWSjCB5IOWIhuWIpeaYryAoMSwzKSDlkowgKDIsNCnvvIzmiYDku6XpgJnlgIvmlaPpu57lnJbmnInlhanlgIvpu57vvIzkuIDlgIvlnKggKDEsMykg5L2N572u77yM5Y+m5LiA5YCL5ZyoICgyLDQpIOS9jee9ruOAguespuiZn+aYr+m7nu+8jOaomemhjOaYryAiYWJjIuOAggpgYGB7cn0KcGxvdCggeCA9YygxLDIpLCB5PWMoMyw0KSwgbWFpbj0iYWJjIiwgcGNoPScuJykKI3Bsb3QoIHggPWMoMSwyKSwgeT1jKDMsNCksIG1haW49ImFiYyIsIHBjaD0nLicsIHlsYWI9J3knLCB4bGFiPSd4JykKYGBgCgpgYGB7cn0KY29uZFY9YyhUUlVFLEZBTFNFKQpwbG90KCB4ID1jKDEsMiksIHk9YygzLDQpLCBtYWluPSJhYmMiLCBjb2w9aWZlbHNlKGNvbmRWLCJyZWQiLCJibHVlIikpCiNwbG90KCB4ID1jKDEsMiksIHk9YygzLDQpLCBtYWluPSJhYmMiLCBwY2g9Jy4nLCB5bGFiPSd5JywgeGxhYj0neCcpCmBgYAoKCgoKCmBgYHtyfQpydW5zID0gMTAwMDAwCiNydW5pZiBzYW1wbGVzIGZyb20gYSB1bmlmb3JtIGRpc3RyaWJ1dGlvbgp4cyA9IHJ1bmlmKCBydW5zICwgbWluPS0wLjUgLCBtYXg9MC41KQp5cyA9IHJ1bmlmKCBydW5zICwgbWluPS0wLjUgLCBtYXg9MC41KQpgYGAKCmhvdyBtYW55IHBvaW50cyBhcmUgaW4gdGhlIGNpcmNsZQpgYGB7cn0KaW4uY2lyY2xlID0geHNeMiArIHlzXjIgPD0gMC41XjIKYGBgCgpUaGUgYXJlYSBvZiBjaXJjbGUgaXMgcGkqcipyICAocipyID0gcl4yKSAKVGhlIGFyZWEgb2Ygc3F1YXJlIGlzIDQqcipyCgpOdW1iZXIgb2YgcG9pbnRzIGluc2lkZSBjaXJjbGUgPSBpbi5jaXJjbGUKTnVtYmVyIG9mIHBvaW50cyBpbnNpZGUgc3F1YXJlID0gMTAwMDAwCgoKTnVtYmVyIG9mIHBvaW50cyBpbnNpZGUgY2lyY2xlIC8gTnVtYmVyIG9mIHBvaW50cyBpbnNpZGUgc3F1YXJlID0gVGhlIGFyZWEgb2YgY2lyY2xlIC8gVGhlIGFyZWEgb2Ygc3F1YXJlIApgYGB7cn0KbWMucGkgPC0gKHN1bShpbi5jaXJjbGUpL3J1bnMpKjQKYGBgCgpgYGB7cn0KcGxvdCh4PXhzLHk9eXMscGNoPScuJyxjb2w9aWZlbHNlKGluLmNpcmNsZSwiYmx1ZSIsImdyZXkiKQogICAgICx4bGFiPScnLHlsYWI9JycsYXNwPTEsCiAgICAgbWFpbj1wYXN0ZSgiTUMgQXBwcm94aW1hdGlvbiBvZiBQaSA9IixtYy5waSkpCmBgYAo=</div>
 
 
 
@@ -1960,7 +2024,7 @@ $(document).ready(function () {
 <!-- code folding -->
 <script>
 $(document).ready(function () {
-  window.initializeSourceEmbed("Ex_1_Monta_carlo.Rmd");
+  window.initializeSourceEmbed("r_lv1_Monta_carlo.Rmd");
   window.initializeCodeFolding("show" === "show");
 });
 </script>

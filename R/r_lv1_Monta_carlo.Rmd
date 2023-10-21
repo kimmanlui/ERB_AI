@@ -8,11 +8,19 @@ output:
 - Get familar with R 
 - Understand a simple Monta Carlo algorithm to find Pi 
 
+#### R
 
-可以使用(a+b)/2来计算两个数的平均数。在这个例子中，a的值为1，b的值为2，所以(a+b)/2的结果为1.5。
+在这个例子中，a的值为1，b的值为2，a加b等于3。
+
+
 ```{r}
 a = 1
 b = 2
+a+b
+```
+
+
+```{r}
 print( (a+b)/2) 
 ```
 
@@ -29,6 +37,7 @@ a是一個包含1, 2, 3, 4, 5的向量。程式碼中的四個print語句分別�
 計算a中元素的數量，並將其打印出來。
 計算a中所有元素的平均值，並將其打印出來。
 計算a中所有元素的平均值，並將其打印出來。
+
 ```{r}
 a = c(1, 2, 3, 4, 5)
 print( sum(a))
@@ -67,6 +76,17 @@ print(trainData[ ,c(1,2)])
 ```
 
 
+```{r}
+df <- read.csv('https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/hospitalizations/locations.csv')
+print(df)
+```
+
+```{r}
+print(nrow(df))
+print(ncol(df))
+print(names(df))
+```
+
 trainData[,c(1)] 选择 trainData 数据集的第一列。
 mean() 计算所选列的平均值。
 print() 在控制台上显示结果。
@@ -74,6 +94,9 @@ print() 在控制台上显示结果。
 ```{r}
 print(mean(trainData[ ,c(1)]))
 ```
+
+#### Monta Carlo algorithm to find Pi
+
 
 runif(3, min=-0.5, max=0.5) 生成 3 个介于 -0.5 和 0.5 之间的均匀分布的随机数。
 runif(6, min=-0.5, max=0.5) 生成 6 个介于 -0.5 和 0.5 之间的均匀分布的随机数。
