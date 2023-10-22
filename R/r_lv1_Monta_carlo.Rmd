@@ -26,6 +26,17 @@ print( (a+b)/2)
 
 
 ```{r}
+a <- readline(prompt="Enter age: ")
+print(a)
+```
+
+```{r}
+a <- readline(prompt="Enter age: ")
+print(paste("Your age is", a) )
+```
+
+
+```{r}
 a = 1
 b = 2
 c = (1+2) / 2

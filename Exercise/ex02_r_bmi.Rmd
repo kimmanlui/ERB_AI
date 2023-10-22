@@ -1,0 +1,22 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+The BMI calculation divides an adult's weight in kilograms (kg) by their height in metres (m) squared.
+If you weigh 70kg and are 1.73m tall, you work out your BMI by: squaring your height: 1.73x1.73 = 2.99. dividing 70 by 2.99 = 23.41.
+
+
+```{r}
+
+my.height <- readline(prompt="Enter height: ")
+my.weight <- readline(prompt="Enter weight: ")
+# convert character into integer
+my.height <- as.numeric(my.height)
+my.weight <- as.numeric(my.weight)
+bmi=my.weight / (my.height*my.height)
+print(paste("Hi,  your bmi is", bmi))
+```
+
+
+

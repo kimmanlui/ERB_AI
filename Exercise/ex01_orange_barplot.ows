@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="CSV File Import" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" project_name="Orange3" version="" title="CSV File Import" position="(135.0, 98.0)" />
+		<node id="1" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWTable" project_name="Orange3" version="" title="Data Table" position="(347.0, 99.0)" />
+		<node id="2" name="Bar Plot" qualified_name="Orange.widgets.visualize.owbarplot.OWBarPlot" project_name="Orange3" version="" title="Bar Plot" position="(597.0, 97.0)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="1" source_node_id="1" sink_node_id="2" source_channel="Selected Data" sink_channel="Data" enabled="true" source_channel_id="selected_data" sink_channel_id="data" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="literal">{'_session_items': [], '_session_items_v2': [({'type': 'AbsPath', 'path': '/Users/admin/Downloads/Table 110-01001.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 16, 'value': 'Auto'}], 'rowspec': [], 'decimal_separator': '.', 'group_separator': ''})], 'compatibility_mode': False, 'controlAreaVisible': True, 'dialog_state': {'directory': '/Users/admin/Downloads', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02 \x00\x00\x01\x99\x00\x00\x03n\x00\x00\x03\x10\x00\x00\x02 \x00\x00\x01\xb5\x00\x00\x03n\x00\x00\x03\x10\x00\x00\x00\x00\x02\x00\x00\x00\x06\xc0\x00\x00\x02 \x00\x00\x01\xb5\x00\x00\x03n\x00\x00\x03\x10', '__version__': 3}</properties>
+		<properties node_id="1" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00\xf1\x00\x00\x01\x8a\x00\x00\x05P\x00\x00\x03U\x00\x00\x00\xf1\x00\x00\x01\xa6\x00\x00\x05P\x00\x00\x03U\x00\x00\x00\x00\x00\x00\x00\x00\x06\xc0\x00\x00\x00\xf1\x00\x00\x01\xa6\x00\x00\x05P\x00\x00\x03U', 'select_rows': True, 'show_attribute_labels': True, 'show_distributions': False, 'stored_selection': {'rows': [], 'columns': []}, 'stored_sort': [], '__version__': 1}</properties>
+		<properties node_id="2" format="pickle">gASVcgIAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZl
+ZFdpZGdldEdlb21ldHJ5lENCAdnQywADAAAAAAGyAAABXgAABOgAAAMfAAABsgAAAXoAAAToAAAD
+HwAAAAAAAAAABsAAAAGyAAABegAABOgAAAMflIwJc2VsZWN0aW9ulF2UjBVudW1weS5jb3JlLm11
+bHRpYXJyYXmUjAZzY2FsYXKUk5SMBW51bXB5lIwFZHR5cGWUk5SMAmk4lImIh5RSlChLA4wBPJRO
+Tk5K/////0r/////SwB0lGJDCDgAAAAAAAAAlIaUUpRhjA92aXN1YWxfc2V0dGluZ3OUfZSMBWdy
+YXBolH2UjAtfX3ZlcnNpb25fX5RLAYwQY29udGV4dF9zZXR0aW5nc5RdlIwVb3Jhbmdld2lkZ2V0
+LnNldHRpbmdzlIwHQ29udGV4dJSTlCmBlH2UKIwGdmFsdWVzlH2UKIwJYW5ub3RfdmFylE5K/v//
+/4aUjAljb2xvcl92YXKUTkr+////hpSMCWdyb3VwX3ZhcpSMA1guMJRLZYaUjAxzZWxlY3RlZF92
+YXKUjANYLjKUS2aGlGgXfZRoGUsBdYwKYXR0cmlidXRlc5R9lChoKEsBaCtLAowDWC4zlEsCjANY
+LjSUSwKMA1guNZRLAowDWC42lEsCjANYLjeUSwKMA1guOJRLAowDWC45lEsCjARYLjEwlEsCjARY
+LjExlEsCjARYLjEylEsCjARYLjEzlEsCjARYLjE0lEsCjARYLjE1lEsCdYwFbWV0YXOUfZSMA1gu
+MZRLA3N1YmF1Lg==
+</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
