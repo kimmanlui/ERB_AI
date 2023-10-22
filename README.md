@@ -23,10 +23,9 @@ Required Packages for Notebook<br>
 !pip install gpt4all or conda install -c anaconda gpt4all <br>
 !pip install transformers or conda install -c conda-forge transformers<br>
 
-Required Packages for perceptilabs<br>
-conda create -n perceptilabs python=3.8<br>
-conda activate perceptilabs<br>
-pip install perceptilabs<br>
+Good Beginner Example<br>
+https://gist.github.com/subhadarship/54f6d320ba34afe80766ca89a1ceb448<br>
+
 
 Orange Data Mining Online Manual<br>
 https://orangedatamining.com/widget-catalog/model/constant/ 
