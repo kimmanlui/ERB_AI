@@ -5,6 +5,7 @@ Required Tools<br>
 https://orangedatamining.com/ <br>
 https://www.anaconda.com/download <br>
 https://posit.co/download/rstudio-desktop/ <br>
+https://www.perceptilabs.com/<br>
 
 Required Packages <br>
 install.packages(pkgs='neuralnet')<br>
