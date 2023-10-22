@@ -24,6 +24,7 @@ Required Packages for Notebook<br>
 
 Required Packages for perceptilabs<br>
 conda create -n perceptilabs python=3.8<br>
+conda activate perceptilabs<br>
 pip install perceptilabs<br>
 
 Orange Data Mining Online Manual<br>
