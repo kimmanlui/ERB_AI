@@ -1,0 +1,54 @@
+---
+title: "人工智能知識及應用證書（兼讀制）: 神經網路"
+output: html_notebook
+---
+
+
+
+Task 1: load the required package
+```{r}
+library(package=   )
+```
+
+
+Task 2: load the yahoo data 
+```{r}
+
+
+trainData = read.csv(             , header=TRUE)
+
+print(trainData)
+```
+
+task 3: Create an additional column to determine whether the closing value for today has increased or decreased compared to the Opening value for today.
+```{r}
+
+
+trainData$updown = ifelse(        ) 
+print(trainData)
+```
+
+
+
+Task 4: Complete the model 
+```{r}
+model=neuralnet(formula       =                       ,
+                data          =  trainData            , 
+                hidden        =                       ,
+                stepmax       =  1e+05                , 
+                act.fct       = "logistic"            ,
+                linear.output = FALSE                 )
+```
+
+
+
+
+Task 5: Predict today's HSI
+```{r}
+predictData=neuralnet::compute(model, data.frame(Open=    , High=   , Low=   ))
+print(predictData)
+```
+
+
+
+

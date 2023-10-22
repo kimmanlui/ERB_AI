@@ -87,6 +87,14 @@ print(trainData[ ,c(1,2)])
 ```
 
 
+trainData$old = ifelse(trainData$old<50, 1, 0) 的意思是，
+对于 trainData 数据集中的 old 列，如果 old 的值小于 50，则将该行的 old 列赋值为 1，否则赋值为 0。
+```{r}
+trainData$old = ifelse(trainData$old<50, 1 , 0) 
+```
+
+
+
 ```{r}
 df <- read.csv('https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/hospitalizations/locations.csv')
 print(df)
